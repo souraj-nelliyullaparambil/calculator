@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <script src="calc.js"></script>
+    <link rel="stylesheet" href="calc.css" />
+  </head>
+  <body>
+    <div class="outer">
+      <input type="text" id="display" disabled />
+      <!--  row 0 -->
+      <div class="mains">
+        <div class="numbers">
+          <div class="row0">
+            <button class="btn" onclick="buttonClicked('*')">*</button>
+            <button class="btn" onclick="buttonClicked('/')">/</button>
+            <button class="btn" onclick="buttonDeleat()">Del</button>
+          </div>
+          <!-- first row  -->
+          <div class="row1">
+            <button class="btn" onclick="buttonClicked('7')">7</button>
+            <button class="btn" onclick="buttonClicked('8')">8</button>
+            <button class="btn" onclick="buttonClicked('9')">9</button>
+          </div>
+          <!-- second row2 -->
+          <div class="row2">
+            <button class="btn" onclick="buttonClicked('4')">4</button>
+            <button class="btn" onclick="buttonClicked('5')">5</button>
+            <button class="btn" onclick="buttonClicked('6')">6</button>
+          </div>
+          <!-- third row3 -->
+          <div class="row3">
+            <button class="btn" onclick="buttonClicked('1')">1</button>
+            <button class="btn" onclick="buttonClicked('2')">2</button>
+            <button class="btn" onclick="buttonClicked('3')">3</button>
+          </div>
+          <!-- row last -->
+          <div class="row4">
+            <button class="btn" onclick="buttonClicked('.')">.</button>
+            <button class="btn" onclick="buttonClicked('0')">0</button>
+            <button class="btn" onclick="buttonClicked('00')">00</button>
+          </div>
+        </div>
+        <!-- row side -->
+        <div class="functions">
+          <button class="btn-rare" onclick="buttonClear()">AC</button>
+          <button class="btn-rare" onclick="buttonClicked('-')">-</button>
+          <button class="btn-rare" onclick="buttonClicked('+')">+</button>
+          <button class="btn-rare btn-2" onclick="buttonEqual()">=</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
